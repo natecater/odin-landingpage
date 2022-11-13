@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     margin: 0;
 }
@@ -42,7 +46,7 @@ section {
 .hero-text {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: flex-start;
     flex: auto;
 }
@@ -54,13 +58,13 @@ section h1 {
 }
 
 section p {
+    margin-top: -35px;
     font-size: 18px;
     color: #e5e7eb;
 }
 
 button {
-    width: 80px;
-    height: 25px;
+    padding: 10px 25px;
     background-color: #3882f6;
     color: #f9faf8;
     border-radius: 5px;
@@ -68,13 +72,18 @@ button {
 }
 
 section img {
-    width: 350px;
-    height: auto;
+    display: flex;
+    width:  auto;
+    height: 350px;
+    padding-left: 150px;
+    align-items: center;
 }
 
 .section-2 {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    padding-bottom: 60px;
 }
 
 .favorite-shots {
@@ -86,9 +95,11 @@ section img {
 
 .shots {
     display: flex;
-    justify-content: space-between;
-    padding-right: 25vw;
-    padding-left: 25vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 35px;
+    flex: 1 1 auto;
 }
 
 .shot {
@@ -100,28 +111,72 @@ section img {
 
 .section-2 img {
     object-fit: cover;
-    width: 225px;
-    height: 225px;
-    border: 1px solid #3882f6;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #3882f6;
     border-radius: 5px;
+    max-width: 100%;
+}
+
+.section-2 p {
+    font-size: 18px;
+    color: #1F2937;
 }
 
 .section-3 {
     background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
-    padding-left: 30vw;
-    padding-right: 30vw;
     justify-content: center;
+    align-items: center;
+    padding: 50px 0;
 }
 
 blockquote {
+    display: ;
     font-size: 36px;
-    font-weight: 200;
+    font-weight: 100;
+    max-width: 900px;
     font-style: italic;
     color: #1f2937
 }
 
 .section-3 p {
     text-align: right;
+    margin-top: -24px;
+    margin-right: 100px;
+    font-weight: 900;
+}
+
+.CTA-hero {
+    background-color: #3882f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 65px 25vw;
+    padding: 25px 50px;
+    border-radius: 5px;
+    border: none;
+}
+
+.CTA-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CTA-hero button {
+    display: flex;
+    align-items: center;
+    border: 2px solid #f9faf8;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color:#f9faf8;
+    margin-bottom: 0;
 }
