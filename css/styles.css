@@ -71,6 +71,10 @@ button {
     border: 0;
 }
 
+.hero-text button {
+    width: 100px;
+}
+
 section img {
     display: flex;
     width:  auto;
@@ -163,6 +167,7 @@ blockquote {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #f9faf8;
 }
 
 .CTA-hero button {
